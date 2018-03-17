@@ -27,27 +27,27 @@
 
       <div class="form-group p-3">
         <label for="figure">Historical Figure</label>
-        <input id="figure" class="form-control" type="text" name="figure"  value="Example: Jane Doe">
+        <input id="figure" class="form-control" type="text" name="figure"  value="Enter Keyword">
       </div>
 
       <div class="form-group p-3">
-        <label for="min_year">Minumum Year</label>
-        <input id="min_year" class="form-control" type="text" name="min_year"  value="Example: 1500" >
+        <label for="min_year">Start Date</label>
+        <input id="min_year" class="form-control" type="text" name="min_year"  value="YYYYMMDD" >
       </div>
     
       <div class="form-group p-3">
-       <label for="max_year">Maximum Year</label>
-       <input id="max_year" class="form-control" type="text" name="max_year"  value="Example: 1600" >
+       <label for="max_year">End Date</label>
+       <input id="max_year" class="form-control" type="text" name="max_year"  value="YYYYMMDD" >
       </div> 
 
       <button id = "submit" class = "btn btn-primary offset-3 col-3 mb-3">Submit</button>
-      <button id = "clear" class = "btn btn-primary col-3 mb-3">Clear Search</button>       
+      <button id = "clear" class = "btn btn-primary col-3 mb-3">Clear</button>       
     </div>
 
 
-    <div id="article" class = "container h2 text-left border border-primary mt-4 p-0">
+    <div id="article" class = "container text-left border border-primary mt-4 p-0">
         <p class = "h2 bg-primary p-3 mt-0 text-white">📄 Top articles</p>
-        <div id="results" class=""></div>
+        <div id="results" class="m-0 px-1 text-secondary"></div>
     </div>
 
 </body>
