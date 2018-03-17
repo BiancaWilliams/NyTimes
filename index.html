@@ -20,48 +20,35 @@
 </head>
 
 <body>
-    <h1 class = "container">
-        <div class = "container bg-warning col align-items-stretch p-5">
-            <h1 class = "display-3 text-center m-5" style = "color: blue;">NYT Search</h1>
-        </div>
-    </class>
+    <h1 class = "container text-center p-5 mb-3 bg-primary text-white"> 📰 New York Times Search</h1>
+        
+    <div id ="searchBox" class="container text-left border border-primary p-0">
+      <p class="h2 bg-primary p-3 mt-0 text-white">🔍Search parameters</p>
 
-        <div class="container d-flex flex-column flex-md-row justify-content-between my-5 mx-0"
-            <section id="main-section" class="container col-12 col-md-7 mt-5 p-3">
-            
-              <section id="search-box">
-            
-                <p class = "p">Search Parameters</p>
-            
-                  <hr style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: auto; margin-right: auto; border-style: inset; border-width: 2px;">
-            
-                  <form>
+      <div class="form-group p-3">
+        <label for="figure">Historical Figure</label>
+        <input id="figure" class="form-control" type="text" name="figure"  value="Example: Jane Doe">
+      </div>
 
-                    <div class="form-group">
-                      <label for="figure">Historical Figure</label>
-                      <input class="form-control" type="text" name="figure" id="figure" value="Example: Jane Doe">
-                    </div>
-                
-                    <div class="form-group">
-                      <label for="min_year">Minumum Year</label>
-                      <input class="form-control" type="text" name="min_year" id="min_year" value="Example: 1500" >
-                    </div>
-                
-                    <div class="form-group">
-                     <label for="max_year">Maximum Year</label>
-                     <input class="form-control" type="text" name="max_year" id="max_year" value="Example: 1600" >
-                    </div> 
+      <div class="form-group p-3">
+        <label for="min_year">Minumum Year</label>
+        <input id="min_year" class="form-control" type="text" name="min_year"  value="Example: 1500" >
+      </div>
+    
+      <div class="form-group p-3">
+       <label for="max_year">Maximum Year</label>
+       <input id="max_year" class="form-control" type="text" name="max_year"  value="Example: 1600" >
+      </div> 
 
-                  </form>
-              
-              
-              </section>
-            
-            
-            <button id = "submit" class = "btn btn-primary btn-sm offset-4 col-4 mt-5">Submit</button> <!--submit-->
-            <button id = "clear results" class = "btn btn-primary btn-sm offset-4 col-4 mt-5">Clear Search</button>       
-            </class>
+      <button id = "submit" class = "btn btn-primary offset-3 col-3 mb-3">Submit</button>
+      <button id = "clear" class = "btn btn-primary col-3 mb-3">Clear Search</button>       
+    </div>
 
+
+    <div id="article" class = "container h2 text-left border border-primary mt-4 p-0">
+        <p class = "h2 bg-primary p-3 mt-0 text-white">📄 Top articles</p>
+        <div id="results" class=""></div>
+    </div>
 
 </body>
 
